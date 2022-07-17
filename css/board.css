@@ -1,0 +1,263 @@
+@charaset "utf-8"
+
+#dummy{
+    
+}
+
+
+#bodywrapper{
+    background-image:  url("../img/background1.png");
+}
+
+div#header a{
+    font: 100% serif;
+    font-size: 25pt;
+    text-decoration: none;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+div#header a:hover{
+    font: 100% serif;
+    font-size: 25pt;
+    text-decoration: none;
+    color: darkcyan;
+}
+
+div#header a:visited{
+    font: 100% serif;
+    font-size: 25pt;
+    text-decoration: none;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+h1#ichiran{
+    color: red;
+    font-family: serif;
+    font-size: 35px;
+}
+
+div#intro{
+    text-align: center;
+}
+
+a#majime{
+    color: navy;
+    text-shadow: navy 2px 2px 2px;
+    text-align: center;
+}
+
+a#mattari{
+    color: gray;
+    text-shadow: olive 1px 1px 2px;
+    text-align: center;
+}
+
+a.ita{
+    font-size: 24px;
+}
+
+p.center{
+    text-align: center;
+}
+
+div#test{
+    text-align: center;
+}
+
+html, body{
+  height: 100%; /* ブラウザ画面の高さをめいっぱいに使用するよ */
+}
+
+#bodywrapper{
+    position: relative; /* フッターを位置指定するための基準設定を、まずフッターの親に書くよ */
+    min-height: 100%;   /* 全部囲ってるdiv#は、”最低でも”高さ100%（＝ブラウザ画面めいっぱい）にしてね */
+    height: auto !important;
+    height: 100%;
+}
+
+#wrapper{
+    padding-bottom: 80px;   /* 高さ80pxのフッターだから、その分空けてあげて */
+}
+
+#footer{
+    text-align: center;
+    position: absolute; /* フッターを絶対配置に指定する設定 */
+    bottom: 30px;   /* フッターを一番下に置くぜ！ */
+    width: 100%;
+    height: 50px;
+}
+
+#hr{
+    height: 2px;
+    background-color: black;
+}
+
+footer#footer ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+footer#footer ul li a {
+    position: relative;
+    text-align: match-parent;
+}
+
+ul#howlist{
+    font-size: 22px;
+}
+
+table#threadTable{
+    width: 100%; table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#threadTable thead tr td, table#threadTable tbody tr td{
+    border: 1px solid black;
+} 
+
+table#threadTable thead{
+   border-bottom: 3px double green; /* ヘッダ行の下線 */
+}
+
+table#threadTable thead tr{
+   background: antiquewhite;
+}
+#threadTable tbody tr.odd{
+    background: lightgrey;
+}
+#threadTable tbody tr.even{
+    background: white;
+}
+
+table#threadTable thead tr th#id{
+    width: 30px;
+}
+table#threadTable thead tr th#title{
+   width: 50%;
+}
+table#threadTable thead tr th#response{
+    width: 48px;
+}
+table#threadTable thead tr th#last{
+   width: 150px;
+}
+table#threadTable thead tr th#since{
+    width: 150px;
+}
+
+table#threadTable tbody tr td#last{
+    align-content: center;
+}
+#mkThre{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#text{
+    background-color: greenyellow;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    display: inline-block;
+}
+div#form{
+    border: outset 10px greenyellow;
+    padding: 10px;
+    display: inline-block;
+}
+
+hr.bound{
+    background-color: black;
+    margin-top: 20px;
+}
+
+#kakikomi {
+    margin-left: -10px; margin-right: -10px;
+    padding:10px; border-top:5px solid black;
+    padding-bottom: 0;
+    border-top-width: thin; 
+    border-bottom: 5px solid black;
+    border-bottom-width: thin;
+    background-color:lightgray;
+    position: -webkit-sticky; /* Safari用 */
+    position: sticky; /* 要素をスクロールに応じて固定 */
+    bottom:0; /* 縦スクロールに追従 */
+    z-index: 100; /* z-indexで最前面に持ってくる */
+    
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+}
+
+label {
+    background: green;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+
+input[type="checkbox"].on-off + #kakikomi{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + #kakikomi{
+    height: 180px;
+}
+
+span.form{
+    margin-top: 2px;
+    line-height: 2px;
+}
+
+span#contentform textarea{
+    vertical-align: text-top;
+    resize: both;
+    width: 100%;
+}
+
+#inquiryform textarea{
+    vertical-align: text-top;
+}
+
+#invitation{
+    font-size: small;
+}
+
+
+#mudamuda {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(55, 55, 55, 0.43);
+    width: 20px;
+    height: 20px;
+    line-height: 20px!important;
+    font-size: 10px!important;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+    background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+    border-bottom: solid 2px #b5b5b5;
+}
+
+#not_found {
+    font-size: x-large;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018/05/09, 23:33:44
+    Author     : Hiroki
+*/
+@charaset "utf-8"
+
+
+
+
+#dummy{
+    margin: 1px;
+}
+
+div.thread{
+    margin:10px; padding:10px; border:5px solid black;
+    background-color:lightgray;
+}
+
+div.kakikomi {
+    margin:10px; padding:10px; border-top:5px solid black;
+    border-top-width: thin; background-color:lightgray;
+    position: -webkit-sticky; /* Safari用 */
+    position:sticky; /* 要素をスクロールに応じて固定 */
+    bottom:0; /* 縦スクロールに追従 */
+    z-index: 100; /* z-indexで最前面に持ってくる */
+}
+
+span.form{
+    margin-top: 2px;
+    line-height: 2px;
+}
+
+span.form textarea{
+    vertical-align: text-top;
+}
+
+
